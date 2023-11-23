@@ -41,7 +41,7 @@ Robot {
       }
     }
     Shape {
-      appearance DEF GlossyPaint PBRAppearance { #the color of the drone's propellers
+      appearance DEF Glossy_Paint PBRAppearance { #the color of the drone's propellers
         baseColor 0.2 0.2 0.2
         metalness 1
         roughness 1
@@ -100,7 +100,7 @@ Robot {
             }
           }
           Shape {
-            appearance GlossyPaint {
+            appearance Glossy_Paint {
               baseColor 0.1 0.1 0.1
             }
             geometry Mesh {
@@ -162,7 +162,7 @@ Robot {
             }
           }
           Shape {
-            appearance GlossyPaint {
+            appearance Glossy_Paint {
               baseColor 1 1 1 
             }
             geometry Mesh {
@@ -220,7 +220,7 @@ Robot {
             }
           }
           Shape {
-            appearance GlossyPaint {
+            appearance Glossy_Paint {
               baseColor 0.1 0.1 0.1
             }
             geometry Mesh {
@@ -282,7 +282,7 @@ Robot {
             }
           }
           Shape {
-            appearance GlossyPaint {
+            appearance Glossy_Paint {
               baseColor 1 1 1
             }
             geometry Mesh {
@@ -340,7 +340,7 @@ Robot {
             }
           }
           Shape {
-            appearance GlossyPaint {
+            appearance Glossy_Paint {
               baseColor 0.1 0.1 0.1
             }
             geometry Mesh {
@@ -402,7 +402,7 @@ Robot {
             }
           }
           Shape {
-            appearance GlossyPaint {
+            appearance Glossy_Paint {
               baseColor 1 1 1
             }
             geometry Mesh {
@@ -655,7 +655,7 @@ Robot {
             }
           }
           Shape {
-            appearance GlossyPaint {
+            appearance Glossy_Paint {
               baseColor 0.1 0.1 0.1
             }
             geometry Mesh {
@@ -717,7 +717,7 @@ Robot {
             }
           }
           Shape {
-            appearance GlossyPaint {
+            appearance Glossy_Paint {
               baseColor 1 1 1
             }
             geometry Mesh {
