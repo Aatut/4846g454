@@ -5,8 +5,8 @@
 # keywords: robot/flying
 # A quadcopter drone mounted with a motorized camera by the DJI company.
 
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/GlossyPaint.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/MattePaint.proto"
+#EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/GlossyPaint.proto"
+#EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/MattePaint.proto"
 
 PROTO Mavic2Pro [
   field SFVec3f    translation         0 0 0.065                           # Is `Pose.translation`.
@@ -32,6 +32,16 @@ Robot {
     }
     Shape {
       appearance DEF BLACK_PLASTIC PBRAppearance { #the color of the drone's plastic hull
+        baseColor 0.2 0.2 0.2
+        metalness 1
+        roughness 1
+      }
+      geometry Mesh {
+        url "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/dji/mavic/protos/Mavic2Pro/meshes/body.obj"
+      }
+    }
+    Shape {
+      appearance DEF GlossyPaint PBRAppearance { #the color of the drone's propellers
         baseColor 0.2 0.2 0.2
         metalness 1
         roughness 1
